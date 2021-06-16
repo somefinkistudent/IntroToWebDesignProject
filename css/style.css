@@ -38,6 +38,9 @@ section {
     padding-top: 185px;
     padding-bottom: 185px;
 }
+.container{
+    padding: 0px 135px;
+}
 .no-gutter {
     padding-right: 0;
     padding-left: 0;
@@ -54,7 +57,7 @@ a:visited {
 }
 .vcenter {
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -91,28 +94,28 @@ a:visited {
 }
 
 /*---------- Navbar ----------*/
-
 .nav {
     position: relative;
     width: auto;
     display: inline-block;
     border: none;
-    float: right;
-    z-index: 99999;
+    float: left;
+    z-index: 9999;
+    margin-right: 20px;
 }
 .navbar-fixed-top {
     padding-top: 10px;
 }
 .navbar-brand {
-    padding-top: 25px;
+    padding-top: 13px;
 }
 .navbar-brand > img {
-    max-width: 127px;
+    max-width: 150px;
     z-index: 9999;
 }
 @media (max-width: 768px) {
     .navbar-brand {
-        padding-left: 0px;
+        padding-left: 0;
     }
 }
 .navbar-default {
@@ -133,7 +136,7 @@ a:visited {
     -o-transition: all .5s ease;
     transition: all .5s ease;
     cursor: pointer;
-    z-index: 99999;
+    z-index: 9999;
 }
 @media (max-width: 768px) {
     .btn-nav {
@@ -150,8 +153,8 @@ a:visited {
     height: 3px;
     background-color: #222;
 }
-.icon-bar.inverted {
-    background-color: #fff;
+.icon-bar{
+    background-color: #000;
 }
 @media (max-width: 992px) {
     .icon-bar.inverted {
@@ -170,15 +173,18 @@ a:visited {
     background-color: #555;
 }
 .nav-content {
+    min-width:130px;
+    width:15%;
+    float:right;
     position: fixed;
     top: -100%;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: transparent;
     display: block;
     height: 100%;
-    z-index: 9;
+    z-index: -9;
 }
 .nav-list {
     list-style: none;
@@ -186,8 +192,8 @@ a:visited {
     position: relative;
 }
 .item-anchor {
-    color: #fff;
-    font-size: 30px;
+    color: #000;
+    font-size: 25px;
     font-weight: 100;
     position: relative;
     text-decoration: none;
@@ -214,18 +220,18 @@ a:visited {
 }
 .nav-item {
     font-family: 'Open Sans', sans-serif;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center;
     color: #222;
 }
 .nav-item a:link,
 .nav-item a:hover,
 .nav-item a:focus {
-    color: #222;
+    color: #000;
 }
 .nav-item a:hover,
 .nav-item a:focus {
-    border-bottom: 2px solid #222;
+    border-bottom: 1px solid #c00;
 }
 .animated {
     display: block;
@@ -248,10 +254,10 @@ a:visited {
     -ms-transition: all .7s ease;
     -o-transition: all .7s ease;
     transition: all .7s ease;
-    z-index: 999999;
+    z-index: 99999;
 }
 .animated .icon-bar {
-    z-index: 999999;
+    z-index: 99999;
     background-color: #222!important;
 }
 .animated .top {
@@ -509,9 +515,11 @@ a:visited {
     padding-left: 15px;
     font-family: 'Open Sans', sans-serif;
 }
-.portfolio-sorting li a:hover,
-.portfolio-sorting li a.active {
+.portfolio-sorting li a.active{
     border-bottom: 2px solid #222;
+}
+.portfolio-sorting li a:hover {
+    border-bottom: 2px solid #c00;
 }
 .portfolio-item {
     margin-bottom: 30px;
@@ -523,4 +531,12 @@ a:visited {
     width: 100%;
     height: 100vh!important;
     object-fit: cover;
+}
+.col-md-9{
+    text-align: justify;
+}
+.logo2{
+    position:relative;
+    top:40%;
+    max-width:60%;
 }
