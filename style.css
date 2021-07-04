@@ -11,6 +11,8 @@ body {
     background-repeat: repeat;
     margin: 0 10px;
     text-align: justify;
+    height: auto;
+    min-width: 90%;
 }
 
 hr {
